@@ -1,0 +1,46 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "FnSVN 应用源",
+    "author": "Rogue324",
+    "homepage": "https://github.com/Rogue324/SVNOnFnos",
+    "description": "由 Rogue324 维护的 FnSVN 应用源。"
+  },
+  "apps": {
+    "fnsvn": {
+      "display_name": "FnSVN",
+      "desc": "飞牛 fnOS 原生 Subversion 管理应用，支持仓库、账户、权限和备份管理。ARM64 版本为实验性支持，不支持 32 位 ARM。",
+      "platform": ["x86", "arm"],
+      "categories": ["编程开发", "系统工具"],
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.6.0/fnos/ICON_256.PNG",
+      "preview_urls": ["https://raw.githubusercontent.com/Rogue324/SVNOnFnos/5397252/docs/images/UI1.png"],
+      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.6.0/README.md",
+      "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
+      "maintainer": "FnSVN",
+      "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "3690",
+      "releases": {
+        "0.6.0": {
+          "changelog": "简化安装向导；在系统设置中修改仓库目录时检查读写权限。",
+          "updated_at": "2026-11-10T00:18:51Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.6.0/fnsvn-amd64.fpk",
+              "sha256": "7018b3c444d0cd895a810309f33a2d8272c564940c22760b6d25af10ca43e01e",
+              "size": 34006894
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.6.0/fnsvn-arm64.fpk",
+              "sha256": "f38a873a55a1683a4bc56f080b243478a8ad106e5df9a0e478fcde8c16b680e9",
+              "size": 33589334
+            }
+          }
+        }
+      }
+    }
+  }
+}
