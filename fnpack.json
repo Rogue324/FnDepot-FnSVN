@@ -12,9 +12,9 @@
       "desc": "FnSVN 是专为飞牛 fnOS 打造的原生 Subversion 版本库管理工具，以 FPK 安装，自带运行环境，提供中文网页管理界面。<br><br>主要功能：<br>• 仓库管理：创建、浏览、重命名和删除仓库，复制接管已有 SVN 仓库，并支持迁移仓库存储目录。<br>• 提交历史：分页浏览完整历史，按作者和日期筛选，查看提交文件及文本版本差异。<br>• 账户与权限：管理 SVN 账户和用户组，设置仓库及子目录的只读、读写权限，并预览实际生效的权限。<br>• 提交规则与通知：设置提交说明最少字符数和 HTTP 通知，保留已有仓库的 hooks。<br>• 备份：生成、查看和下载单个仓库的完整 SVN dump。<br><br>支持 x86-64 和 ARM64；ARM64 为实验性支持，尚需实机验证，不支持 32 位 ARM。最低支持 fnOS 1.1.3100。SVN 客户端使用独立账户，远程访问 SVN 服务需要可达的网络连接。",
       "platform": ["x86", "arm"],
       "categories": ["编程开发", "系统工具"],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.1/fnos/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.2/fnos/ICON_256.PNG",
       "preview_urls": ["https://raw.githubusercontent.com/Rogue324/SVNOnFnos/5397252/docs/images/UI1.png"],
-      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.1/README.md",
+      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.2/README.md",
       "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
       "maintainer": "FnSVN",
       "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
@@ -23,6 +23,23 @@
       "is_docker": false,
       "service_port": "3690",
       "releases": {
+        "0.7.2": {
+          "changelog": "修复安装和升级时架构标识换行格式导致设备架构被误判的问题。",
+          "updated_at": "2026-11-12T14:45:14Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.2/fnsvn-amd64.fpk",
+              "sha256": "31451fce279946dd28b8d6cb2e26d81664d69f82a550455dc01d09242b3a403b",
+              "size": 34021909
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.2/fnsvn-arm64.fpk",
+              "sha256": "b390b7bcb4a96e32d048c9302708acf8e73fb53ad1a3fc880c69a0165b989355",
+              "size": 33571389
+            }
+          }
+        },
         "0.7.1": {
           "changelog": "将安装包中的应用简介更新为详细中文，改善飞牛应用中心和 FnDepot 的展示。",
           "updated_at": "2026-11-12T14:39:49Z",
