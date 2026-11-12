@@ -9,12 +9,12 @@
   "apps": {
     "fnsvn": {
       "display_name": "FnSVN",
-      "desc": "飞牛 fnOS 原生 Subversion 管理应用，支持仓库、账户、权限和备份管理。ARM64 版本为实验性支持，不支持 32 位 ARM。",
+      "desc": "FnSVN 是专为飞牛 fnOS 打造的原生 Subversion 版本库管理工具，以 FPK 安装，自带运行环境，提供中文网页管理界面。<br><br>主要功能：<br>• 仓库管理：创建、浏览、重命名和删除仓库，复制接管已有 SVN 仓库，并支持迁移仓库存储目录。<br>• 提交历史：分页浏览完整历史，按作者和日期筛选，查看提交文件及文本版本差异。<br>• 账户与权限：管理 SVN 账户和用户组，设置仓库及子目录的只读、读写权限，并预览实际生效的权限。<br>• 提交规则与通知：设置提交说明最少字符数和 HTTP 通知，保留已有仓库的 hooks。<br>• 备份：生成、查看和下载单个仓库的完整 SVN dump。<br><br>支持 x86-64 和 ARM64；ARM64 为实验性支持，尚需实机验证，不支持 32 位 ARM。最低支持 fnOS 1.1.3100。SVN 客户端使用独立账户，远程访问 SVN 服务需要可达的网络连接。",
       "platform": ["x86", "arm"],
       "categories": ["编程开发", "系统工具"],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.6.0/fnos/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.0/fnos/ICON_256.PNG",
       "preview_urls": ["https://raw.githubusercontent.com/Rogue324/SVNOnFnos/5397252/docs/images/UI1.png"],
-      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.6.0/README.md",
+      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.0/README.md",
       "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
       "maintainer": "FnSVN",
       "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
@@ -23,6 +23,23 @@
       "is_docker": false,
       "service_port": "3690",
       "releases": {
+        "0.7.0": {
+          "changelog": "新增提交历史分页、作者与日期筛选、变更文件和文本版本比较；支持用户组、子目录授权及生效权限预览；新增提交说明规则和 HTTP 通知，保留已有 hooks。",
+          "updated_at": "2026-11-12T14:05:26Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.0/fnsvn-amd64.fpk",
+              "sha256": "40c9711bab47ae8c13867085656081678bd21554f453fd824670b1bf94f0c44a",
+              "size": 34023816
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.0/fnsvn-arm64.fpk",
+              "sha256": "b2c76d03f602a9e11f29af0653d48a0a58efcc0d608499703e131a7d7c50c7d8",
+              "size": 33561589
+            }
+          }
+        },
         "0.6.0": {
           "changelog": "简化安装向导；在系统设置中修改仓库目录时检查读写权限。",
           "updated_at": "2026-11-10T00:18:51Z",
