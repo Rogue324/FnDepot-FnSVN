@@ -9,12 +9,12 @@
   "apps": {
     "fnsvn": {
       "display_name": "FnSVN",
-      "desc": "FnSVN 是专为飞牛 fnOS 打造的原生 Subversion 版本库管理工具，以 FPK 安装，自带运行环境，提供中文网页管理界面。<br><br>主要功能：<br>• 仓库管理：创建、浏览、重命名和删除仓库，复制接管已有 SVN 仓库，并支持迁移仓库存储目录。<br>• 提交历史：分页浏览完整历史，按作者和日期筛选，查看提交文件及文本版本差异。<br>• 账户与权限：管理 SVN 账户和用户组，设置仓库及子目录的只读、读写权限，并预览实际生效的权限。<br>• 提交规则与通知：设置提交说明最少字符数和 HTTP 通知，保留已有仓库的 hooks。<br>• 备份：生成、查看和下载单个仓库的完整 SVN dump。<br><br>支持 x86-64 和 ARM64；ARM64 为实验性支持，尚需实机验证，不支持 32 位 ARM。最低支持 fnOS 1.1.3100。SVN 客户端使用独立账户，远程访问 SVN 服务需要可达的网络连接。",
+      "desc": "FnSVN 是专为飞牛 fnOS 打造的原生 Subversion 版本库管理工具，以 FPK 安装，自带运行环境，提供中文网页管理界面。<br><br>主要功能：<br>• 仓库管理：创建、浏览、重命名和删除仓库，复制接管已有 SVN 仓库，并支持迁移仓库存储目录。<br>• 提交历史：分页浏览完整历史，按作者和日期筛选，查看提交文件、文本版本差异及提交活动热力图。<br>• 账户与权限：可视化管理 SVN 账户和用户组，设置仓库及子目录的只读、读写权限，并预览实际生效的权限。<br>• 提交规则与通知：设置提交说明最少字符数和 HTTP 通知，保留已有仓库的 hooks。<br>• 备份：生成、查看和下载单个仓库的完整 SVN dump。<br><br>支持 x86-64 和 ARM64；ARM64 为实验性支持，尚需实机验证，不支持 32 位 ARM。最低支持 fnOS 1.1.3100。SVN 客户端使用独立账户，远程访问 SVN 服务需要可达的网络连接。",
       "platform": ["x86", "arm"],
       "categories": ["编程开发", "系统工具"],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.2/fnos/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.3/fnos/ICON_256.PNG",
       "preview_urls": ["https://raw.githubusercontent.com/Rogue324/SVNOnFnos/5397252/docs/images/UI1.png"],
-      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.2/README.md",
+      "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/v0.7.3/README.md",
       "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
       "maintainer": "FnSVN",
       "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
@@ -23,6 +23,23 @@
       "is_docker": false,
       "service_port": "3690",
       "releases": {
+        "0.7.3": {
+          "changelog": "补回仓库提交热力图及作者筛选；用户组与子目录授权改为可视化操作；优化提交日志搜索与移动端布局。",
+          "updated_at": "2026-11-12T14:56:56Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.3/fnsvn-amd64.fpk",
+              "sha256": "03742502978547ea89494451db71873ac2f8b48bb77adb16b4de638a4f0fd57a",
+              "size": 34019517
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/SVNOnFnos/releases/download/v0.7.3/fnsvn-arm64.fpk",
+              "sha256": "bb6491895d8043082a31f2117afd42f9544c4da9d72cad0fe69a31ad4c1136b5",
+              "size": 33576617
+            }
+          }
+        },
         "0.7.2": {
           "changelog": "修复安装和升级时架构标识换行格式导致设备架构被误判的问题。",
           "updated_at": "2026-11-12T14:45:14Z",
