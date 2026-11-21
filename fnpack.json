@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.6/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.7/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.7": {
+          "changelog": "修复飞牛手机 App WebView 缓存旧版 index.html 导致移动端样式未生效的问题（为 index.html 增加 no-cache 响应头）；将移动端抽屉断点提升至 1024px，并为桌面端也新增侧边栏一键收起/展开按钮。",
+          "updated_at": "2026-11-21T11:36:28Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.7/antigravity-cli-amd64.fpk",
+              "sha256": "fc317512e6a4262375856c6e9c12761d6fb59fc13a370c55a6dac215bc008cde",
+              "size": 3262608
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.7/antigravity-cli-arm64.fpk",
+              "sha256": "4355120b9bf8fb92f5fb759b417a07f2851c63884dcfc8685b26db0602fef935",
+              "size": 3020986
+            }
+          }
+        },
         "0.1.6": {
           "changelog": "全面适配移动端页面布局：新增移动端顶部导航栏与侧边抽屉菜单、Chat 参数工具栏折叠、100dvh 动态视口与 iOS 防自动缩放输入框、内置终端底部触控快捷键栏（Esc/Tab/Ctrl+C/方向键/Enter）以及设置页和目录选择弹窗响应式排版。",
           "updated_at": "2026-11-21T08:57:44Z",
