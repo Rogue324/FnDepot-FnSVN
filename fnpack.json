@@ -1,10 +1,10 @@
 {
   "schema_version": "2",
   "source_info": {
-    "name": "FnSVN 应用源",
+    "name": "Rogue的应用源",
     "author": "Rogue324",
     "homepage": "https://github.com/Rogue324/SVNOnFnos",
-    "description": "由 Rogue324 维护的 FnSVN 应用源。"
+    "description": "由 Rogue324 维护的飞牛 fnOS 第三方应用源（含 FnSVN、Antigravity 等）。"
   },
   "apps": {
     "fnsvn": {
