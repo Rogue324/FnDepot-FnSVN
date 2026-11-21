@@ -156,7 +156,7 @@
     },
     "antigravity-cli": {
       "display_name": "Antigravity",
-      "desc": "Antigravity for fnOS 是将 Google Antigravity CLI (agy) 深度集成到飞牛 NAS 的原生工作台应用，以 FPK 安装，单二进制零依赖。<br><br>主要功能：<br>• Web Chat 图形对话：流式 Markdown 渲染、思考过程（Thinking）折叠、工具调用卡片、Token 统计与多会话持久化。<br>• 内置 Web 终端：基于 xterm.js + PTY 托管完整 agy TUI，支持无头 NAS 首次交互式 OAuth 登录、使用 /mcp /skills /diff 等原生命令，以及从 Web Chat 一键切入终端继续同一会话。<br>• NAS 专属适配：专用低权限应用用户（antigravity-cli）按需授权共享目录；内置 NAS 工作区与附加目录选择器；应用级网络代理配置与连通性测试；设置中心一键安装/升级 agy。<br><br>支持 x86-64 和 ARM64（ARM64 为实验性支持）。默认监听端口 18765，首次进入需设置应用访问密码。",
+      "desc": "Antigravity for fnOS 是将 Google Antigravity CLI (agy) 深度集成到飞牛 NAS 的原生工作台应用，以 FPK 安装，单二进制零依赖，通过飞牛统一网关在桌面窗口内直接打开。<br><br>主要功能：<br>• Web Chat 图形对话：流式 Markdown 渲染、思考过程（Thinking）折叠、工具调用卡片、Token 统计与多会话持久化。<br>• 内置 Web 终端：基于 xterm.js + PTY 托管完整 agy TUI，支持无头 NAS 首次交互式 OAuth 登录、使用 /mcp /skills /diff 等原生命令，以及从 Web Chat 一键切入终端继续同一会话。<br>• NAS 专属适配：专用低权限应用用户（antigravity-cli）按需授权共享目录；内置 NAS 工作区与附加目录选择器；应用级网络代理配置与连通性测试；设置中心一键安装/升级 agy。<br><br>支持 x86-64 和 ARM64（ARM64 为实验性支持）。最低支持 fnOS 1.1.3100，首次进入需设置应用访问密码。",
       "platform": [
         "x86",
         "arm"
@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.1/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.2/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -176,8 +176,25 @@
       "run_as": "package",
       "install_type": "",
       "is_docker": false,
-      "service_port": "18765",
+      "service_port": "",
       "releases": {
+        "0.1.2": {
+          "changelog": "改为接入飞牛统一网关（Unix Socket + /app/antigravity-cli），点击桌面图标直接在飞牛桌面窗口（iframe）内打开，不再弹出独立端口新网页；同时支持通过飞牛远程访问/统一域名使用 Web Chat 与 WebSocket 终端。",
+          "updated_at": "2026-11-21T06:34:24Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.2/antigravity-cli-amd64.fpk",
+              "sha256": "84375b83aeb7a09e9e7a2759f88fae456d13f1148a756382c1eff7f247ac3e7b",
+              "size": 3196585
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.2/antigravity-cli-arm64.fpk",
+              "sha256": "cfe9664f418aa013167600325766918f3af34c08c662500e1ee41609bea09345",
+              "size": 2957753
+            }
+          }
+        },
         "0.1.1": {
           "changelog": "修复安装初始化阶段提前操作 TRIM_PKGVAR 导致安装报错 (code 10237) 的问题；将持久化目录初始化移至 install_callback / upgrade_callback，并完善启动失败日志输出。",
           "updated_at": "2026-11-21T06:26:50Z",
