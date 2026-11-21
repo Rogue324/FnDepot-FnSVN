@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.5/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.6/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.6": {
+          "changelog": "全面适配移动端页面布局：新增移动端顶部导航栏与侧边抽屉菜单、Chat 参数工具栏折叠、100dvh 动态视口与 iOS 防自动缩放输入框、内置终端底部触控快捷键栏（Esc/Tab/Ctrl+C/方向键/Enter）以及设置页和目录选择弹窗响应式排版。",
+          "updated_at": "2026-11-21T08:57:44Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.6/antigravity-cli-amd64.fpk",
+              "sha256": "e35e73de2cab71c0cbc729b0b238b41acbe5723f7ae53abaaac721031e27d1aa",
+              "size": 3262075
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.6/antigravity-cli-arm64.fpk",
+              "sha256": "dc1eb1f4e93cace40ad19f661b11eb5a33d67d47e46cddac2f502b091110845b",
+              "size": 3020474
+            }
+          }
+        },
         "0.1.5": {
           "changelog": "将应用包图标、飞牛桌面图标、网页 Favicon 及界面品牌 Logo 全部替换为 Google Antigravity 官方图标。",
           "updated_at": "2026-11-21T07:26:59Z",
