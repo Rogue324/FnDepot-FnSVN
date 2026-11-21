@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.4/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.5/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.5": {
+          "changelog": "将应用包图标、飞牛桌面图标、网页 Favicon 及界面品牌 Logo 全部替换为 Google Antigravity 官方图标。",
+          "updated_at": "2026-11-21T07:26:59Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.5/antigravity-cli-amd64.fpk",
+              "sha256": "0c474bef975840786a7dc8f73162570c8c47c0015a5b7697f468cf09ab507bdd",
+              "size": 3260264
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.5/antigravity-cli-arm64.fpk",
+              "sha256": "d1d9be5e2153fb923a0fb78bea9ae9e985ad56bb1991e180f8e80d62c3f89122",
+              "size": 3019102
+            }
+          }
+        },
         "0.1.4": {
           "changelog": "修复 Web Chat 回复气泡空白问题（适配 agy 官方 stream-json 嵌套事件结构 init / step_update / result 与 --mode 参数）；修复已登录后仍提示未登录（扩展凭据目录探测并在切换页签时自动刷新）；新增可用模型下拉选择（agy models）与思考强度选择（--effort）。",
           "updated_at": "2026-11-21T07:05:11Z",
