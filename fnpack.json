@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.2/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.3/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.3": {
+          "changelog": "修复一键安装 agy 与内置终端在飞牛后台环境下提示 exec: bash not found in $PATH 的问题（补全系统 PATH、使用绝对 Shell 路径并通过 Go 内置 HTTP 代理下载安装脚本）；界面改为默认浅色模式并新增浅色/深色主题一键切换。",
+          "updated_at": "2026-11-21T06:49:27Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.3/antigravity-cli-amd64.fpk",
+              "sha256": "455a8000adfd47f85e41f623449163078ca7dbc35cb71ea50ab06c4194224774",
+              "size": 3201806
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.3/antigravity-cli-arm64.fpk",
+              "sha256": "eecf1c6f859fa28ea5e44c337947dbf09a908f0dd0cec123ae293211463e3bfa",
+              "size": 2962144
+            }
+          }
+        },
         "0.1.2": {
           "changelog": "改为接入飞牛统一网关（Unix Socket + /app/antigravity-cli），点击桌面图标直接在飞牛桌面窗口（iframe）内打开，不再弹出独立端口新网页；同时支持通过飞牛远程访问/统一域名使用 Web Chat 与 WebSocket 终端。",
           "updated_at": "2026-11-21T06:34:24Z",
