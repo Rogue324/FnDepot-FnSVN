@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.7/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.8/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.8": {
+          "changelog": "1. 重构对话顶部工具栏为清晰双行自适应布局，解决桌面端/移动端错位与拥挤问题；2. 新增内置空闲自动释放的 agy 长连接进程池（默认 10 分钟空闲自动关闭，支持在设置中配置），兼顾多轮响应速度与内存占用；3. 输入框支持图片/文件上传、粘贴截图与拖拽上传；4. 输入框新增 / 快捷 CLI 命令选择器。",
+          "updated_at": "2026-11-21T12:14:09Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.8/antigravity-cli-amd64.fpk",
+              "sha256": "abee5dd3425e6dc0afd57008c624d87e78cebe8eaf23412e4d1438b7f6ab9cc2",
+              "size": 3414006
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.8/antigravity-cli-arm64.fpk",
+              "sha256": "5ec4c3ea2bc328ce4e0d3ae5b2bc9ef47e858adfbed6304f2ac886cc6c25dd3d",
+              "size": 3162079
+            }
+          }
+        },
         "0.1.7": {
           "changelog": "修复飞牛手机 App WebView 缓存旧版 index.html 导致移动端样式未生效的问题（为 index.html 增加 no-cache 响应头）；将移动端抽屉断点提升至 1024px，并为桌面端也新增侧边栏一键收起/展开按钮。",
           "updated_at": "2026-11-21T11:36:28Z",
