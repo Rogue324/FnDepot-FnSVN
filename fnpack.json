@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.0/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.1/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "18765",
       "releases": {
+        "0.1.1": {
+          "changelog": "修复安装初始化阶段提前操作 TRIM_PKGVAR 导致安装报错 (code 10237) 的问题；将持久化目录初始化移至 install_callback / upgrade_callback，并完善启动失败日志输出。",
+          "updated_at": "2026-11-21T06:26:50Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.1/antigravity-cli-amd64.fpk",
+              "sha256": "597aeb68692f09f96561c1bb88b1274c0ef46302652ec8a721e6b0c3f8b380e6",
+              "size": 3190998
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.1/antigravity-cli-arm64.fpk",
+              "sha256": "65d20055bc45fb2e66d1f81e4fdbb1d0787a14fffe0e6003c1ef6356421c0dc2",
+              "size": 2952717
+            }
+          }
+        },
         "0.1.0": {
           "changelog": "首个原生 fnOS FPK 版本：Go 单二进制零依赖（内嵌 React 前端），支持 Web Chat 图形化流式对话、内置 xterm.js Web 终端、NAS 工作区选择器、应用级代理配置、设置中心一键安装 agy 及专用应用用户隔离。",
           "updated_at": "2026-11-21T06:14:59Z",
