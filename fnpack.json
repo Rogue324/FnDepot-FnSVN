@@ -3,7 +3,7 @@
   "source_info": {
     "name": "Rogue的应用源",
     "author": "Rogue324",
-    "homepage": "https://github.com/Rogue324/SVNOnFnos",
+    "homepage": "https://github.com/Rogue324/FnDepot-FnSVN",
     "description": "由 Rogue324 维护的飞牛 fnOS 第三方应用源（含 FnSVN、Antigravity 等）。"
   },
   "apps": {
@@ -24,9 +24,9 @@
       ],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/SVNOnFnos/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/SVNOnFnos/issues",
-      "maintainer": "FnSVN",
+      "maintainer": "Rogue324",
       "maintainer_url": "https://github.com/Rogue324/SVNOnFnos",
-      "distributor": "FnSVN",
+      "distributor": "Rogue324",
       "distributor_url": "https://github.com/Rogue324/SVNOnFnos",
       "run_as": "package",
       "install_type": "",
