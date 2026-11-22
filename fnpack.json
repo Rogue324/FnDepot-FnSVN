@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.12/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.13/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.13": {
+          "changelog": "修复飞牛桌面内点击文件链接无法唤起宿主打开的问题：在 manifest 中补充 micro_app=true 声明以启用 @trimjs/web-app 宿主桥，并增加宿主重连与详细错误提示。",
+          "updated_at": "2026-11-22T13:24:28Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.13/antigravity-cli-amd64.fpk",
+              "sha256": "4b19267a99c987752ae0e27ac23bb5e3481e7a3f548fe4c2789e97f7ab4bfdd8",
+              "size": 3455658
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.13/antigravity-cli-arm64.fpk",
+              "sha256": "64863745ccb83fb57f31e2717cf8c68c2d8a689033d56e2e43bb2e0a412ecd04",
+              "size": 3199415
+            }
+          }
+        },
         "0.1.12": {
           "changelog": "接入飞牛官方前端 JS SDK（@trimjs/web-app）：对话窗口中的本地文件/目录链接（file:///vol1/... 等）支持一键直接调用飞牛系统打开预览或定位所在目录；在独立浏览器中点击时自动复制路径并提示。",
           "updated_at": "2026-11-22T13:14:55Z",
