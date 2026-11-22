@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.10/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.11/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.11": {
+          "changelog": "Web Chat 底层全面切换为官方 agy acp（Agent Client Protocol JSON-RPC 2.0）协议：彻底解决未开启跳过权限确认时命令与文件操作被无头模式静默拒绝的问题；新增网页端实时操作权限审批卡片（支持允许一次、始终允许、拒绝等选项），同时遵循官方 Thin Client 合规规范。",
+          "updated_at": "2026-11-22T13:00:47Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.11/antigravity-cli-amd64.fpk",
+              "sha256": "acb4f3eb5732e8f8a657db9092b192785273e501f47f69a7ff7d4054b58d39b4",
+              "size": 3440483
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.11/antigravity-cli-arm64.fpk",
+              "sha256": "1b9e91fe1a92cf0d27177c36f77fdb4f29cbd538dd8fa621ab0bdfe0e44715d4",
+              "size": 3186288
+            }
+          }
+        },
         "0.1.10": {
           "changelog": "设置中心新增「官方远程控制（Remote Control 常驻服务）」托管功能：由 Go 后端直接守护 agy remote-control serve 后台进程，彻底解决在 Web 终端内执行 /remote-control 切页面或关闭浏览器即断开的问题；自动继承代理配置与登录凭据，支持开机自启、断线自动重连、一键重启及实时运行日志查看。",
           "updated_at": "2026-11-22T08:07:26Z",
