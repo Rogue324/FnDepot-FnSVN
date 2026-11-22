@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.11/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.12/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.12": {
+          "changelog": "接入飞牛官方前端 JS SDK（@trimjs/web-app）：对话窗口中的本地文件/目录链接（file:///vol1/... 等）支持一键直接调用飞牛系统打开预览或定位所在目录；在独立浏览器中点击时自动复制路径并提示。",
+          "updated_at": "2026-11-22T13:14:55Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.12/antigravity-cli-amd64.fpk",
+              "sha256": "5f488d88b2221f4e8daaf6f140f397f01f3f1de1300f403b0182b7603c0e475b",
+              "size": 3455592
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.12/antigravity-cli-arm64.fpk",
+              "sha256": "90be8bdb0e4bac7ce24058f3b505d1686e89596fc9b1405dcb1c54192a5c5898",
+              "size": 3199295
+            }
+          }
+        },
         "0.1.11": {
           "changelog": "Web Chat 底层全面切换为官方 agy acp（Agent Client Protocol JSON-RPC 2.0）协议：彻底解决未开启跳过权限确认时命令与文件操作被无头模式静默拒绝的问题；新增网页端实时操作权限审批卡片（支持允许一次、始终允许、拒绝等选项），同时遵循官方 Thin Client 合规规范。",
           "updated_at": "2026-11-22T13:00:47Z",
