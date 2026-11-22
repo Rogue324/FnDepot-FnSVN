@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.9/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.10/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.10": {
+          "changelog": "设置中心新增「官方远程控制（Remote Control 常驻服务）」托管功能：由 Go 后端直接守护 agy remote-control serve 后台进程，彻底解决在 Web 终端内执行 /remote-control 切页面或关闭浏览器即断开的问题；自动继承代理配置与登录凭据，支持开机自启、断线自动重连、一键重启及实时运行日志查看。",
+          "updated_at": "2026-11-22T08:07:26Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.10/antigravity-cli-amd64.fpk",
+              "sha256": "e7eedadcc65c5744ca1e4ab0886956390b5f48e9c7f33d9196b3999d105609e2",
+              "size": 3428627
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.10/antigravity-cli-arm64.fpk",
+              "sha256": "5f73750e0a89a8c8e9b140499da63cb5f3f9e40bd3bd2ea3afc9031ed1c7b6a7",
+              "size": 3174870
+            }
+          }
+        },
         "0.1.9": {
           "changelog": "1. 移除桌面端侧边栏收起按钮，修复点击后左侧导航异常拉伸的问题（桌面端常驻侧边栏，移动端保持抽屉切换）；2. 设置中心新增「启动密码与访问安全」开关，支持关闭启动密码无密码直接进入，也支持首次启动跳过密码或后续随时重新开启。",
           "updated_at": "2026-11-21T12:36:28Z",
