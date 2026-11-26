@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.15/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.16/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.16": {
+          "changelog": "升级 QQ 权限审批按钮为官方 INTERACTION_CREATE 回调模式（action.type=1）：点击按钮不再在聊天里刷出 1/0 文本，服务端回执后按钮自动切换为「已通过」/「已拒绝」并补发审批结果提示；若机器人未开通回调权限则自动降级为快捷指令按钮与纯文本回复。",
+          "updated_at": "2026-11-26T04:36:24Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.16/antigravity-cli-amd64.fpk",
+              "sha256": "b7b9a33e77f74e6da66f8384d397368fe9bbbb7fbf602e8152e095a936933214",
+              "size": 3577085
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.16/antigravity-cli-arm64.fpk",
+              "sha256": "359540593c5fd2b62f22276bd630ccd6e77472ac956d512a308433c748af759f",
+              "size": 3316619
+            }
+          }
+        },
         "0.1.15": {
           "changelog": "优化 QQ 机器人交互体验：1) 权限审批升级为消息内双按钮（「允许」/「拒绝」）点击即确认，若当前机器人无按钮/Markdown 权限则自动降级为纯文本序号回复；2) 侧边栏历史会话列表为 QQ 来源会话自动展示蓝色 QQ 企鹅图标并去除文字前缀。",
           "updated_at": "2026-11-26T04:18:35Z",
