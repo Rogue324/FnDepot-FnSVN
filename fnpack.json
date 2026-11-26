@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.14/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.15/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.15": {
+          "changelog": "优化 QQ 机器人交互体验：1) 权限审批升级为消息内双按钮（「允许」/「拒绝」）点击即确认，若当前机器人无按钮/Markdown 权限则自动降级为纯文本序号回复；2) 侧边栏历史会话列表为 QQ 来源会话自动展示蓝色 QQ 企鹅图标并去除文字前缀。",
+          "updated_at": "2026-11-26T04:18:35Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.15/antigravity-cli-amd64.fpk",
+              "sha256": "9e23f7ed7f313c51e2f1c988ec9005f78ea5764f1381306e9fb861a9ffd1594a",
+              "size": 3570371
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.15/antigravity-cli-arm64.fpk",
+              "sha256": "d1ccf13d0bd72512225847b56f2e0775a927aa8d55a45596e3f96e42095ea31a",
+              "size": 3309377
+            }
+          }
+        },
         "0.1.14": {
           "changelog": "新增原生 Go 实现的 QQ 机器人接入：支持手机 QQ 扫码一键创建绑定与手动 AppID/AppSecret 接入，通过官方 WebSocket 网关直连（无需公网域名与 Node.js）；与 Web Chat 共享会话，支持 Markdown 自动降级纯文本与长文分片、常用斜杠命令（/new /status /workspace /model /permission /stop /help）、QQ 端工具权限审批回复、图片与文件附件下载分析，以及默认安全访问控制（默认关闭群聊、扫码绑定自动开启仅限绑定主人私聊与白名单配置）。",
           "updated_at": "2026-11-26T04:02:32Z",
