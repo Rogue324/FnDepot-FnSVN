@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.16/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.17/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.17": {
+          "changelog": "修复纯 WebSocket 机器人点击审批回调按钮提示「第三方请求失败」的问题：切回 WebSocket 原生兼容的快捷按钮（action.type=2），审批完成后自动撤回旧按钮消息并发送清晰的最终结果（✅ 已通过审批 / ❌ 已拒绝审批）。",
+          "updated_at": "2026-11-26T04:43:36Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.17/antigravity-cli-amd64.fpk",
+              "sha256": "6812ed91c2bcb36fdb1664e017d5ece1e2a6a057d61cef7d1155680d5597e28b",
+              "size": 3577934
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.17/antigravity-cli-arm64.fpk",
+              "sha256": "156b52cefc7f5859f10386c1a0a3bc892b0a576426b7367c7b61d153865e610b",
+              "size": 3317025
+            }
+          }
+        },
         "0.1.16": {
           "changelog": "升级 QQ 权限审批按钮为官方 INTERACTION_CREATE 回调模式（action.type=1）：点击按钮不再在聊天里刷出 1/0 文本，服务端回执后按钮自动切换为「已通过」/「已拒绝」并补发审批结果提示；若机器人未开通回调权限则自动降级为快捷指令按钮与纯文本回复。",
           "updated_at": "2026-11-26T04:36:24Z",
