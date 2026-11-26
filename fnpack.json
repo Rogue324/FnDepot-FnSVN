@@ -165,7 +165,7 @@
         "编程开发",
         "AI赋能"
       ],
-      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.13/fpk/ICON_256.PNG",
+      "icon_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/v0.1.14/fpk/ICON_256.PNG",
       "preview_urls": [],
       "readme_url": "https://raw.githubusercontent.com/Rogue324/AntigravityOnFnOs/main/README.md",
       "bug_report_url": "https://github.com/Rogue324/AntigravityOnFnOs/issues",
@@ -178,6 +178,23 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.1.14": {
+          "changelog": "新增原生 Go 实现的 QQ 机器人接入：支持手机 QQ 扫码一键创建绑定与手动 AppID/AppSecret 接入，通过官方 WebSocket 网关直连（无需公网域名与 Node.js）；与 Web Chat 共享会话，支持 Markdown 自动降级纯文本与长文分片、常用斜杠命令（/new /status /workspace /model /permission /stop /help）、QQ 端工具权限审批回复、图片与文件附件下载分析，以及默认安全访问控制（默认关闭群聊、扫码绑定自动开启仅限绑定主人私聊与白名单配置）。",
+          "updated_at": "2026-11-26T04:02:32Z",
+          "os_min_version": "1.1.3100",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.14/antigravity-cli-amd64.fpk",
+              "sha256": "98240d9ea826c5c238bf887d983cf1d6f3c55eb2ed8fc8ddbb269c8c76190e4a",
+              "size": 3566279
+            },
+            "arm": {
+              "download_url": "https://github.com/Rogue324/AntigravityOnFnOs/releases/download/v0.1.14/antigravity-cli-arm64.fpk",
+              "sha256": "5b7843f50ced0a46507237081e05d84264bb50609fa2954211e342a2a7bebdb0",
+              "size": 3305758
+            }
+          }
+        },
         "0.1.13": {
           "changelog": "修复飞牛桌面内点击文件链接无法唤起宿主打开的问题：在 manifest 中补充 micro_app=true 声明以启用 @trimjs/web-app 宿主桥，并增加宿主重连与详细错误提示。",
           "updated_at": "2026-11-22T13:24:28Z",
